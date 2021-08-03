@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/cvbackground">
+
+        <TextView
+            android:id="@+id/tvRegisteredWorkshopName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Workshop Name"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/tvRegisteredWorkshopDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Workshop Description"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+<!--    <ImageButton-->
+<!--        android:id="@+id/ibDelete"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="right|center_vertical"-->
+<!--        android:src="@drawable/ic_baseline_delete_forever_24"-->
+<!--        android:backgroundTint="@color/white"/>-->
+
+</androidx.cardview.widget.CardView>

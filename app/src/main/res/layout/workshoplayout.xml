@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/cvbackground">
+
+    <TextView
+        android:id="@+id/tvWorkshopName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Workshop Name"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/tvWorkshopDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Workshop Description"
+        android:layout_marginRight="100dp"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="3dp"
+        />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginRight="2dp"
+        android:backgroundTint="@color/white"
+        android:text="Apply"
+        android:layout_gravity="right|center_vertical"
+        android:background="@color/teal_200" />
+
+</androidx.cardview.widget.CardView>
