@@ -18,7 +18,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         var db=MyDbHelper(this).writableDatabase
         LogIn()
-        supportFragmentManager.beginTransaction().replace(R.id.flContainer,AvailableWorkshops()).commit()
+        val spref=getSharedPreferences("MYPREFS", MODE_PRIVATE)
+        val email=spref.getString("email",null)
+        if(email==null){
+            supportFragmentManager.beginTransaction().replace(R.id.flContainer,AvailableWorkshops()).commit()
+        }
+        else
+            supportFragmentManager.beginTransaction().replace(R.id.flContainer,Dashboard()).commit()
 
         btnWorkshops.setOnClickListener {
             Toast.makeText(this,"Btn Workshop clicked",Toast.LENGTH_SHORT).show()
